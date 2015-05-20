@@ -1,0 +1,33 @@
+{
+    "bitwise": true,
+    "browser": true,
+    "devel": true,
+    "curly": true,
+    "eqeqeq": true,
+    "es3": true, /* Assume site must work in IE6/7/8. */
+    "forin": true,
+    "freeze": true,
+    "globals": {
+        "require": false,
+        "exports": false,
+        "process": false,
+        "JSON": false
+    },
+    "immed": true,
+    "indent": 4,
+    "latedef": true,
+    "newcap": true,
+    "noarg": true,
+    "noempty": false,
+    "nonew": true,
+    "onevar": true,
+    "plusplus": false,
+    "quotmark": "single",
+    "regexp": false,
+    "regexdash": true,
+    "strict": false,
+    "trailing": true,
+    "undef": true,
+    "unused": false,
+    "white": true
+}
