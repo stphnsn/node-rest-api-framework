@@ -4,7 +4,6 @@
     "devel": true,
     "curly": true,
     "eqeqeq": true,
-    "es3": true, /* Assume site must work in IE6/7/8. */
     "forin": true,
     "freeze": true,
     "globals": {

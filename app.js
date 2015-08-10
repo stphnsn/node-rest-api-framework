@@ -6,8 +6,19 @@ var express = require('express'),
     port = process.env.PORT || 3001,
     v = '1',
     app = express(),
+    allowedDomains = process.env.DOMAINS || '*',
     allowCrossDomain = function (req, res, next) {
-        res.header('Access-Control-Allow-Origin', '*');
+        if (req.headers.origin) {
+            if (allowedDomains === '*') {
+                res.header('Access-Control-Allow-Origin', '*');
+            } else {
+                if (allowedDomains.indexOf(req.headers.origin) !== -1) {
+                    res.header('Access-Control-Allow-Origin', req.headers.origin);
+                } else {
+                    res.header('Access-Control-Allow-Origin', 'null');
+                }
+            }
+        }
         res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
         res.header('Access-Control-Allow-Headers', 'Content-Type');
         next();
