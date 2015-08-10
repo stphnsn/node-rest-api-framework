@@ -24,6 +24,12 @@ More info on installing MongoDB can be found here: http://docs.mongodb.org/manua
 
 ### Install and run the app
 
+Make sure mongo is up and running
+
+`mongod`
+
+Install and start the application
+
 `npm install`
 
 `npm start`
@@ -31,6 +37,12 @@ More info on installing MongoDB can be found here: http://docs.mongodb.org/manua
 The services will start running on locahost:3001.
 
 At first run your database will be empty. You can use the services to add, update and delete documents.
+
+### Development workflow
+
+If you are making changes to your own version of the framework you can use [Nodemon](https://github.com/remy/nodemon) to watch the JS files. Nodemon will then stop and restart the app when needed.
+
+`npm run dev`
 
 ## REST API endpoints
 

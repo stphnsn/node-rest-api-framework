@@ -4,8 +4,8 @@
   "description": "Node Rest API Framework",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "start": "node app.js",
+    "dev": "nodemon app.js"
   },
   "author": "Richard Stephenson",
   "license": "ISC",
@@ -15,7 +15,9 @@
     "express": "^4.12.3",
     "mongodb": "^2.0.28"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "^1.4.0"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/rstphnsn/node-rest-api-framework.git"
