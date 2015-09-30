@@ -38,6 +38,14 @@ The services will start running on locahost:3001.
 
 At first run your database will be empty. You can use the services to add, update and delete documents.
 
+To use a document name other then default "items" use the following instead of `npm start`
+
+`DOCUMENT_NAME=your_item_name node app.js`
+
+To run the API on a different port by use the following
+
+`PORT=3002 node app.js`
+
 ### Development workflow
 
 If you are making changes to your own version of the framework you can use [Nodemon](https://github.com/remy/nodemon) to watch the JS files. Nodemon will then stop and restart the app when needed.
